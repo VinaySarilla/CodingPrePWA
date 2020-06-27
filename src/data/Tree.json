@@ -1,0 +1,42 @@
+[
+        {
+            "id": "T1",
+            "Question": "PreOrder Traversal",
+            "level": "Easy"
+        },
+        {
+            "id": "T2",
+            "Question": "PostOrder Traversal",
+            "level": "Easy"
+        },
+        {
+            "id": "T3",
+            "Question": "InOrder Traversal",
+            "level": "Easy"
+        },
+        {
+            "id": "T4",
+            "Question": "Maximum Depth of Tree",
+            "level": "Easy"
+        },
+        {
+            "id": "T5",
+            "Question": "Minimum Depth of Tree",
+            "level": "Easy"
+        },
+        {
+            "id": "T6",
+            "Question": "Search in BST",
+            "level": "Easy"
+        },
+        {
+            "id": "T7",
+            "Question": "Validate BST",
+            "level": "Easy"
+        },
+        {
+            "id": "T8",
+            "Question": "Average of Each level",
+            "level": "Easy"
+        }
+    ]

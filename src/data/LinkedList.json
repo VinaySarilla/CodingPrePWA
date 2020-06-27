@@ -1,0 +1,98 @@
+[
+        {
+            "id": "L1",
+            "Question": "Delete N Nodes After M Nodes of a Linked List",
+            "level": "Easy"
+        },
+        {
+            "id": "L2",
+            "Question": "Middle of the Linked List",
+            "input": "1-2-3-4-5",
+            "output": "3",
+            "level": "Easy"
+        },
+        {
+            "id": "L3",
+            "Question": "Delete Node in a Linked List",
+            "input": "1-2-3-4    3",
+            "output": "1-2-4",
+            "level": "Easy"
+        },
+        {
+            "id": "L4",
+            "Question": "Reverse Linked List",
+            "input": "1-2-3-4",
+            "output": "4-3-2-1",
+            "level": "Easy"
+        },
+        {
+            "id": "L5",
+            "Question": "Merge Two Sorted Lists",
+            "input": "1-2-3  /  2-4-5",
+            "output": "1-2-2-3-4-5",
+            "level": "Easy"
+        },
+        {
+            "id": "L6",
+            "Question": "Remove Duplicates from Sorted List",
+            "input": "1-2-3-1-3",
+            "output": "1-2-3",
+            "level": "Easy"
+        },
+        {
+            "id": "L7",
+            "Question": "Linked List Cycle",
+            "input": "Detect Cycle",
+            "output": "True / False",
+            "level": "Easy"
+        },
+        {
+            "id": "L8",
+            "Question": "Intersection of Two Linked Lists",
+            "level": "Easy"
+        },
+        {
+            "id": "L9",
+            "Question": "Palindrome Linked List",
+            "input": "1-2-2-1",
+            "output": "True",
+            "level": "Easy"
+        },
+        {
+            "id": "L10",
+            "Question": "Remove Linked List Elements",
+            "level": "Easy"
+        },
+        {
+            "id": "L11",
+            "Question": "Convert Binary Search Tree to Sorted Doubly Linked List",
+            "level": "Easy"
+        },
+        {
+            "id": "L12",
+            "Question": "Plus One Linked List",
+            "level": "Medium"
+        },
+        {
+            "id": "L13",
+            "Question": "Next Greater Node In Linked List",
+            "input": "5-3-4-2-1",
+            "output": "5 4 4 2 1",
+            "level": "Medium"
+        },
+        {
+            "id": "L14",
+            "Question": "Linked List Components",
+            "level": "Medium"
+        },
+        {
+            "id": "L15",
+            "Question": "Odd Even Linked List",
+            "level": "Medium"
+        },
+        {
+            "id": "L16",
+            "Question": "Add Two Numbers II",
+            "level": "Medium"
+        }
+    ]

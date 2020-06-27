@@ -1,0 +1,48 @@
+[
+        {
+            "id": "S1",
+            "Question": "Make 3 Stack heights equal",
+            "input": "{3, 2, 1, 1, 1};\n{4, 3, 2};\n{1, 1, 4, 1};\n",
+            "output": "5",
+            "level": "Easy"
+        },
+        {
+            "id": "S2",
+            "Question": "Sort a Stack",
+            "input": "4,3,2,1",
+            "output": "1,2,3,4",
+            "level": "Easy"
+        },
+        {
+            "id": "S3",
+            "Question": "Sort using Recursion",
+            "input": "4,3,2,1",
+            "output": "1,2,3,4",
+            "level": "Easy"
+        },
+        {
+            "id": "S4",
+            "Question": "Stock Span Problem",
+            "level": "Easy"
+        },
+        {
+            "id": "S5",
+            "Question": "Design Queue using Stack",
+            "level": "Easy"
+        },
+        {
+            "id": "S6",
+            "Question": "GetMin in Stack",
+            "level": "Easy"
+        },
+        {
+            "id": "S7",
+            "Question": "Postfix and Prefix",
+            "level": "Easy"
+        },
+        {
+            "id": "S8",
+            "Question": "Valid Brackets",
+            "level": "Medium"
+        }
+    ]

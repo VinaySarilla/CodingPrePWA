@@ -1,7 +1,20 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const data = require("./src/data/test.json")
 
-// You can delete this file if you're not using it
+exports.createPages = ({ actions }) => {
+  const { createPage } = actions
+
+  const template = require.resolve(`./src/components/Questions.js`)
+
+  data.forEach(T => {
+    var name = T.name
+
+    createPage({
+      path: `/test/${name}`,
+      component: template,
+      context: {
+        dataPath: `./src/data/${name}.json`,
+        name: T.name,
+      },
+    })
+  })
+}
