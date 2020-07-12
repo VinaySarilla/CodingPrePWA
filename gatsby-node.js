@@ -1,5 +1,4 @@
 const data = require("./src/data/test.json")
-
 exports.createPages = ({ actions }) => {
   const { createPage } = actions
 
@@ -18,3 +17,21 @@ exports.createPages = ({ actions }) => {
     })
   })
 }
+
+/**
+ * exports.onCreateWebpackConfig = ({ stage, loading, actions }) => {
+  if (stage == "build-html") {
+    actions.setWebpackConfig({
+      modules: {
+        rules: [
+          {
+            test: "/react-materialize/",
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
+
+ */

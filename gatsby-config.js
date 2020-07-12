@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Interview Prep`,
+    title: `Coding Prep`,
     description: `Progressive Web App`,
-    author: `@gatsbyjs`,
+    author: `Vinay Sarilla`,
     data: ["d1", "d2", "d3"],
     person: { name: "vinay", name: "nidhi" },
   },
@@ -37,13 +37,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/home`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        name: `Coding Prep`,
+        short_name: `CodingPWA`,
+        start_url: `/`,
+        background_color: `#0277bd`,
+        theme_color: `#0277bd`,
         display: `standalone`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/Logo.png`,
         crossOrigin: `use-credentials`,
         // This path is relative to the root of the site.
       },

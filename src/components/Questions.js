@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Question from "./Question"
 import Layout from "./Layout"
 import { useState } from "react"
@@ -8,10 +8,20 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons"
 export default function Questions(props) {
   let AData = require(`../data/${props.pageContext.name}.json`)
   const [state, setState] = useState("")
-
+  const [count, setCount] = useState(0)
   const handleChange = e => {
     let text = e.target.value
     setState(text)
+  }
+  useEffect(() => {
+    let x = JSON.parse(localStorage.getItem(props.pageContext.name))
+    setCount(x.length)
+  }, [props.pageContext.name])
+
+  const countSets = action => {
+    let x = count
+    if (action) setCount(x + 1)
+    else setCount(x - 1)
   }
 
   return (
@@ -35,10 +45,12 @@ export default function Questions(props) {
           <tr>
             <th>Id</th>
             <th>Problem</th>
-            <th>Input</th>
-            <th>Output</th>
+            <th className="hide-on-med-and-down">Input</th>
+            <th className="hide-on-med-and-down">Output</th>
             <th>Level</th>
-            <th>Solved</th>
+            <th>
+              {count} / {AData.length}
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -46,11 +58,19 @@ export default function Questions(props) {
             AData.filter(A =>
               A.Question.toLowerCase().includes(state.toLowerCase())
             ).map(Q => {
-              return <Question data={Q} key={Q.id} />
+              return (
+                <Question
+                  data={Q}
+                  key={Q.id}
+                  countSets={countSets}
+                  name={props.pageContext.name}
+                />
+              )
             })
           ) : (
             <tr>No data</tr>
           )}
+          {console.log(count)}
         </tbody>
       </table>
     </Layout>

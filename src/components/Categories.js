@@ -1,13 +1,51 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlay, faTerminal } from "@fortawesome/free-solid-svg-icons"
 
-export default ({ name }) => {
-  const img1 = require(`../images/${name.name}.png`)
+export default ({ name, progress, total, finished }) => {
+  const [e, setState] = useState(0)
 
   return (
-    <div class="col s6 m3">
+    <div className="col s12 m6">
+      <div
+        className={`card-panel z-depth-${e}`}
+        style={{ border: "1px solid #0277bd24" }}
+        onMouseOver={() => setState(1)}
+        onMouseLeave={() => setState(0)}
+      >
+        <div className="row">
+          <h5 className="col s10">{name.name}</h5>
+          <h5 className="col s2 right">
+            {finished}/{total}
+          </h5>
+        </div>
+        <div
+          className="progress light-blue lighten-4"
+          style={{ marginBottom: "30px" }}
+        >
+          <div
+            className="determinate light-blue darken-2"
+            style={{ width: `${progress}%` }}
+          ></div>
+        </div>
+        <div className="row">
+          <div className="col s4 right">
+            <Link
+              className="btn-large right light-blue darken-2 scale-transition"
+              to={`/test/${name.name}`}
+            >
+              Solve
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/**
+ *    <div class="col s12 m3">
       <div class="card center">
         <div class="card-image">
           <img src={img1} />
@@ -23,11 +61,18 @@ export default ({ name }) => {
           </Link>
         </div>
         <br></br>
-        <br></br>
+        <div class="row valign-wrapper">
+          <div className="progress" style={{ margin: "10px" }}>
+            <div
+              className="determinate"
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
-  )
-}
+ * 
+ */
 
 /**
  *     <div class="col s12 m4">

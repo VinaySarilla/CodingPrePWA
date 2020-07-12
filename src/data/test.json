@@ -1,22 +1,22 @@
 [
   {
-    "count": 20,
+    "count": 10,
     "name": "Array"
   },
   {
-    "count": 20,
+    "count": 16,
     "name": "LinkedList"
   },
   {
-    "count": 10,
+    "count": 1,
     "name": "Queue"
   },
   {
-    "count": 20,
+    "count": 8,
     "name": "Stack"
   },
   {
-    "count": 20,
+    "count": 8,
     "name": "Tree"
   }
 ]
