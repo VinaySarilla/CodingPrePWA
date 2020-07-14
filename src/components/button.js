@@ -1,7 +1,5 @@
-import styled from "styled-components"
+import React from "react"
+import Loadable from "@loadable/component"
+import M from "materialize-css"
 
-export const Button = styled.button`
-  background: blue;
-  color: red;
-  font-size: 2rem;
-`
+export const Modal = Loadable(() => import("react-materialize/lib/Modal"))

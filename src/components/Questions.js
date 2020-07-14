@@ -40,7 +40,7 @@ export default function Questions(props) {
           </div>
         </div>
       </div>
-      <table className="striped centered border">
+      <table className="highlight centered">
         <thead>
           <tr>
             <th>Id</th>

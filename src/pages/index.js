@@ -2,17 +2,9 @@ import React, { useEffect } from "react"
 import Layout from "../components/Layout"
 import Categories from "../components/Categories"
 import "materialize-css/dist/css/materialize.min.css"
-
 import data from "../data/test.json"
 export default () => {
   const isBrowser = typeof window !== `undefined`
-
-  useEffect(() => {
-    if (isBrowser) {
-      const M = require("materialize-css")
-      M.AutoInit()
-    }
-  })
 
   return (
     <Layout>
