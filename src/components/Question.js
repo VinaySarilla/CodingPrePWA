@@ -41,7 +41,7 @@ const Question = ({ data, countSets, name }) => {
   }
   return (
     <>
-      <tr className="" style={{ fontWeight: "400" }}>
+      <tr className="" style={{ fontWeight: "600" }}>
         <td>{id}</td>
         <td onClick={ShowDesc} className="blue-text">
           {Question}
