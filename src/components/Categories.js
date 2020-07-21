@@ -1,7 +1,5 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPlay, faTerminal } from "@fortawesome/free-solid-svg-icons"
 
 export default ({ name, progress, total, finished }) => {
   const [e, setState] = useState(0)
