@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import Layout from "../components/Layout"
 import Categories from "../components/Categories"
 import "materialize-css/dist/css/materialize.min.css"
-import data from "../data/test.json"
+import Data from "../data/Test.json"
 export default () => {
   const isBrowser = typeof window !== `undefined`
 
@@ -10,7 +10,7 @@ export default () => {
     <Layout>
       <div className="row">
         <div id="DS" class="col s12">
-          {data.map(d => {
+          {Data.map(d => {
             let a = []
 
             if (isBrowser) {
