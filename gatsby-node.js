@@ -1,4 +1,4 @@
-const data = require("./src/data/test.json")
+const data = require("./src/data/Test.json")
 
 exports.createPages = ({ actions }) => {
   const { createPage } = actions
